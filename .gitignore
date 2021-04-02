@@ -1,112 +1,80 @@
-# Use global syntax for excludes
-syntax: glob
+######################
+# 解决java产生文件
+######################
+*.class
 
-# Exclude IntelliJ files
-.idea
-.bsp
-.vagrant
-.node
-*.iml
-*.iws
-*.ipr
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# Exclude Eclipse files
-.settings
-.metadata
-.workspace
-*.project
-*.classpath
-*.springBeans
-*.springWebflow
-maven-eclipse.xml
+# Package Files #
+*.jar
+*.war
+*.ear
 
-# Common tools files
-*.pmd
-*.checkstyle
-target
-**/bin/**
-test-output
-.toDelete
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
-# Logs
-logs
-logsPath_IS_UNDEFINED
-*.log
-velocity.log*
+######################
+# 解决maven产生的文件
+######################
 
-# Runtime data
-pids
-*.pid
-*.seed
-
-# Coverage tools
-lib-cov
-coverage
-
-# Dependency directory
-node_modules
-
-# Generated code
-gen
-dist
-transpiled
-build
-build-ts
-generated
-plugin_gen.xml
-plugin.xml_gen
-*.ucls
+target/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
 
-# Generated css
-*/public/styles/*.css
+######################
+# 解决各类编辑器自动产生的文件
+######################
 
-**/src/automatic/**/*.ts
+*.iml
 
-# Generated package.json
-/package.json
-/package-lock.json
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
 
-*.tgz
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
 
-# Vertx
-.vertx
+# Sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
 
-# Mac OSX
-.DS_Store
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
 
-# Eclipse Trace
-*._trace
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
 
-# Eclipse XText & Xtend
-*/xtend-gen/*
-*/xtext-gen/*
-*/src-gen/*
+## File-based project format:
+*.ipr
+*.iws
 
-# DCEVM related
-extraClasspath.properties
-hotswap-agent.properties
+## Plugin-specific files:
 
-# Gradle
-*/.gradle/*
+# IntelliJ
+/out/
+/target/
 
-# Gateway selection
-*/gateway/Gateway.js
+# mpeltonen/sbt-idea plugin
+.idea_modules/
 
-# ECTS internals
-etcs-automation/etcs-automation-tests/external_run_id.txt
-etcs-automation/dxp-automation-tests/external_run_id.txt
-etcs-automation/smoke_results.txt
+# JIRA plugin
+atlassian-ide-plugin.xml
 
-# Deployment scripts
-docker/dev/connect.bat
-
-# Version backups
-*.versionBackups
-
-# VSCode folders
-.vscode
-*.hprof
-prototypes/conversion/conversion-mapping-services/MODELS.json
-*.xlsx#
-.npmrc
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
