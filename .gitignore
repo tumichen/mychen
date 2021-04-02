@@ -93,3 +93,10 @@ buildNumber.properties
 /.springBeans
 /bin/
 
+.idea/misc.xml
+.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml
+.idea/libraries/Maven__log4j_log4j_1_2_17.xml
+.idea/libraries/Maven__org_slf4j_slf4j_api_1_8_0_alpha2.xml
+.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_8_0_alpha2.xml
+thinking-in-java/thinking-in-java.iml
+
